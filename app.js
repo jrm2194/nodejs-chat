@@ -1,5 +1,6 @@
 // Modules
 var express = require('express');
+var cors = require('cors');
 var path = require('path');
 var favicon = require('static-favicon');
 var logger = require('morgan');
@@ -22,6 +23,7 @@ var io = socket.listen(server); // use our server
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
+app.use(cors());
 app.use(favicon());
 app.use(logger('dev'));
 app.use(bodyParser.json());
