@@ -18,6 +18,7 @@ var port = 3030;
 var server = app.listen(port);
 var io = socket.listen(server); // use our server
 
+io.set( 'origins', '*localhost*:*' );
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
