@@ -16,5 +16,9 @@
     "debug": "~0.7.4",
     "jade": "*",
     "socket.io": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jrm2194/nodejs-chat"
   }
 }
