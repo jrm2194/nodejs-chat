@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  ul(id="thread")
+  div(id="chatWrapper")
+    form(id="chatForm", action="/chat", method="post")
+      input(type="text", name="message", id="message", placeholder="Type your message...")
+      div(id="echo")
+    
